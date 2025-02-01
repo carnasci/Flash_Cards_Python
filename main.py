@@ -4,7 +4,7 @@ import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 
-#------------------- Logic ---------------------#
+#----------------------- Logic -------------------------#
 
 data = pandas.read_csv("data/french_words.csv")
 to_learn = data.to_dict(orient="records")
