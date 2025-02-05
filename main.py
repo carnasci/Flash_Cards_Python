@@ -34,6 +34,8 @@ card_title = canvas.create_text(400, 150, text="Title", font=("Ariel", 40, "ital
 card_word = canvas.create_text(400, 263, text="Word", font=("Ariel", 60, "bold"))
 canvas.grid(row=0, column=0, columnspan=2)
 
+window.after(5000, flip_card)
+
 right_button_img = PhotoImage(file="images/right.png")
 right_button = Button(image=right_button_img, highlightthickness=0, command=next_word)
 right_button.grid(row=1, column=1)
